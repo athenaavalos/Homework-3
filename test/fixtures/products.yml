@@ -11,3 +11,14 @@ two:
   description: MyText
   image_url: MyString
   price: 9.99
+
+ring:
+  title:     Floral Turquoise Opal Ring
+  description:         
+    This is a special and unique piece that will be sure to grab attention! 
+    The Floral Turquoise Opal Ring is hand crafted from genuine sterling 
+    silver and beautifully decorated with Turquoise and Opal inlay. Mini 
+    silver beads line the inlay and floral designs making for a hallmark 
+    finish and a beautiful decoration to any outfit! 
+  image_url: WS218612.jpg
+  price:     36.00
