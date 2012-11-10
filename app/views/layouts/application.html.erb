@@ -8,12 +8,25 @@
   <%= csrf_meta_tags %>
 </head>
 <body id= "store">
+	<% if @cart %>
+	<%= hidden_div_if(@cart.line_items.empty?, :id => "cart") do %>
+	  <%= render @cart %>
+	<% end %>
+	<%= pluralize session[:counter], 'time' %>
 	<div id= "banner">
 		<%= image_tag("ASJTlogo2.png") %>
 		<%= @page_title || "Athena's Southwestern Jewelry Treasures" %>
 	</div>
 	<div id="columns">
 		<div id = "side">
+			 <p><%= Time.now.strftime('%I:%M %p') %></p>
+			<div id= "cart"
+	              <% if @cart.line_items.empty? %>
+	                style="display: none"
+	              <% end %>>
+				<%= render @cart %>
+		    </div>
+		    
 			<a href="http://www....">Home</a><br />
 			<a href="http://www..../faq">Questions</a><br />
 			<a href="http://www..../news">News</a><br />
@@ -26,3 +39,4 @@
 
 </body>
 </html>
+<% end %>

@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'will_paginate', '>= 3.0.pre'
+
 gem 'rails', '3.2.1'
 
 # Bundle edge Rails instead:
@@ -36,3 +38,5 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+   
